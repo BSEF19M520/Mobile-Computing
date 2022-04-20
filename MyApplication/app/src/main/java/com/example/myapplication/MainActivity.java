@@ -19,12 +19,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LayoutInflater layoutInflater = getLayoutInflater();
-        View mainActivityView = layoutInflater.inflate(R.layout.activity_main, null);
-        TextView textView = (TextView) mainActivityView.findViewById(R.id.textView);
+        TextView textView = (TextView) this.findViewById(R.id.textView);
         String initialText = (String) textView.getText();
         final AtomicBoolean toggle = new AtomicBoolean(true);
-        Button button = (Button) mainActivityView.findViewById(R.id.button);
+        Button button = (Button) this.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
