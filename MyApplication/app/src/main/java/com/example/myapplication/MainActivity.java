@@ -17,21 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(com.google.android.material.R.style.Theme_AppCompat_Light);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.register);
 
-        TextView textView = (TextView) this.findViewById(R.id.textView);
-        String initialText = (String) textView.getText();
-        final AtomicBoolean toggle = new AtomicBoolean(true);
-        Button button = (Button) this.findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (toggle.getAndSet(!toggle.get()))
-                    textView.setText("Text changed");
-                else
-                    textView.setText(initialText);
-            }
-        });
     }
 
 }
