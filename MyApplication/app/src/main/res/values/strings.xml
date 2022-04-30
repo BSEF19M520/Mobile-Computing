@@ -1,6 +1,6 @@
 <resources>
     <string name="calculator_expressions">%1$s</string>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Talha\'s Application</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="cancel">Cancel</string>
@@ -45,4 +45,5 @@
     <string name="register_activity">Register Activity</string>
     <string name="calculator_activity">Calculator Activity</string>
     <string name="toggle_text">Toggle Text</string>
+    <string name="title_activity_main">Main Activity</string>
 </resources>
