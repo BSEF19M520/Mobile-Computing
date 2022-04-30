@@ -6,32 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/mainActivityTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World! From Talha"
-        android:textAlignment="center"
-        android:textColor="@color/design_default_color_primary"
-        android:textSize="48sp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/mainActivityToggleButton"
-        android:layout_width="381dp"
-        android:layout_height="80dp"
-        android:text="Tap me"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/mainActivityTextView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/mainActivityTextView"
-        app:layout_constraintTop_toBottomOf="@+id/mainActivityTextView"
-        app:layout_constraintVertical_bias="0.319" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mainActivityLoginActivityButton"
+                android:layout_width="212dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/login_activity"
+                app:layout_constraintEnd_toEndOf="@+id/mainActivityToggleButton"
+                app:layout_constraintStart_toStartOf="@+id/mainActivityToggleButton"
+                app:layout_constraintTop_toBottomOf="@+id/mainActivityToggleButton" />
+
+            <TextView
+                android:id="@+id/mainActivityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="@string/hello_world_from_talha"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/mainActivityRegisterActivityButton"
+                android:layout_width="212dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/register_activity"
+                app:layout_constraintEnd_toEndOf="@+id/mainActivityLoginActivityButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/mainActivityLoginActivityButton"
+                app:layout_constraintTop_toBottomOf="@+id/mainActivityLoginActivityButton" />
+
+            <Button
+                android:id="@+id/mainActivityCalculatorActivityButton"
+                android:layout_width="212dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/calculator_activity"
+                app:layout_constraintEnd_toEndOf="@+id/mainActivityRegisterActivityButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/mainActivityRegisterActivityButton"
+                app:layout_constraintTop_toBottomOf="@+id/mainActivityRegisterActivityButton" />
+
+            <Button
+                android:id="@+id/mainActivityToggleButton"
+                android:layout_width="212dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/toggle_text"
+                app:layout_constraintEnd_toEndOf="@+id/mainActivityTextView"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="@+id/mainActivityTextView"
+                app:layout_constraintTop_toBottomOf="@+id/mainActivityTextView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
