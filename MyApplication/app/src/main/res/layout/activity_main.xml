@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/mainActivityTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World! From Talha"
@@ -22,16 +22,16 @@
         app:layout_constraintVertical_bias="0.193" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/mainActivityToggleButton"
         android:layout_width="381dp"
         android:layout_height="80dp"
         android:text="Tap me"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivityTextView"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/mainActivityTextView"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivityTextView"
         app:layout_constraintVertical_bias="0.319" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
