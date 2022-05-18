@@ -10,24 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CalculatorActivity"
             android:exported="false"
             android:label="@string/title_activity_calculator"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:exported="true" >
+            android:exported="true"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

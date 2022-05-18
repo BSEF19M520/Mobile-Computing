@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -94,7 +96,8 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
             double result = evaluator.evaluate(this.getExpression());
             Toast toast = Toast.makeText(getApplicationContext(), String.valueOf(result), Toast.LENGTH_SHORT);
             toast.show();
-            this.setExpression(Double.toString(result));
+            Log.d("CalculatorActivity", String.valueOf(result));
+            this.setExpression(String.valueOf(result));
         } catch (Exception ignored) {
             this.setExpression(INVALID);
             Toast toast = Toast.makeText(getApplicationContext(), INVALID, Toast.LENGTH_SHORT);
