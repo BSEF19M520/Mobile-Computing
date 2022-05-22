@@ -11,13 +11,21 @@
         android:theme="@style/Theme.AppForKids">
         <activity
             android:name=".ViewAlphabetImagesActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/lessons"
+            android:parentActivityName=".LessonsActivity"
+            />
         <activity
             android:name=".ExamActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/exam"
+            android:parentActivityName=".MainActivity"
+            />
         <activity
             android:name=".LessonsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/lessons"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

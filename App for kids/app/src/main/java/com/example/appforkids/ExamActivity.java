@@ -1,6 +1,7 @@
 package com.example.appforkids;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
 import android.view.View;
@@ -22,7 +23,7 @@ import java.util.Stack;
 
 public class ExamActivity extends AppCompatActivity {
 
-    final int QUESTIONS_LIMIT = 2;
+    final int QUESTIONS_LIMIT = 5;
     List<Map.Entry<String, Integer>> imagesList;
     List<Integer> correctOptionsNumbers;
 

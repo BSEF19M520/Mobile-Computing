@@ -3,10 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/layout/activity_exam.xml" value="0.3333333333333333" />
+        <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/layout/activity_exam.xml" value="0.1" />
         <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/layout/activity_lessons.xml" value="0.22" />
         <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/layout/activity_view_alphabet_images.xml" value="0.3333333333333333" />
+        <entry key="..\:/Study/6th Sem/Mobile Computing/Repository/App for kids/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

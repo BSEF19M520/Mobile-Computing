@@ -51,11 +51,10 @@ public class ViewAlphabetImagesActivity extends AppCompatActivity {
         Field[] fields = R.drawable.class.getFields();
         String imagePrefix = "alphabet_image_" + alphabet.toLowerCase();
 
-        int counter = 1; // to limit the number of retrieved pictures
-        int limit = 3;
+        int limit = 3; // to limit the number of retrieved pictures
 
         for (Field field : fields) {
-            if (counter++ > limit)
+            if (imagesMap.size() > limit)
                 break;
             String fieldName = field.getName();
             if (fieldName.startsWith(imagePrefix)) {

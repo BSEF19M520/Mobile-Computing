@@ -6,4 +6,7 @@
     <string name="choose_one_option_of_each_question">Choose one option of each question</string>
     <string name="choose_the_name_of_the_object_shown_in_the_pictures">Choose the name of the object shown in the pictures</string>
     <string name="submit">Submit</string>
+    <string name="lessons">Lessons</string>
+    <string name="exam">Exam</string>
+    <string name="click_on_an_alphabet">Click on an alphabet</string>
 </resources>
