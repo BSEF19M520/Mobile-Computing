@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainActivity_mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App for kids"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_repoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mainActivity_repoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repository"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_lessonsButton"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivity_mainTextView"
+        app:layout_constraintStart_toStartOf="@+id/mainActivity_mainTextView"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_mainTextView" />
+
+    <Button
+        android:id="@+id/mainActivity_lessonsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lessons"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_examButton"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivity_repoButton"
+        app:layout_constraintStart_toStartOf="@+id/mainActivity_repoButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_repoButton" />
+
+    <Button
+        android:id="@+id/mainActivity_examButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivity_lessonsButton"
+        app:layout_constraintStart_toStartOf="@+id/mainActivity_lessonsButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_lessonsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

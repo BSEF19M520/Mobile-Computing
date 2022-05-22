@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LessonsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="397dp">
+
+            <TextView
+                android:id="@+id/lessonsActivity_mainTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Click on an  alphabet"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="615dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_mainTextView">
+
+                <Button
+                    android:id="@+id/lessonsActivity_xButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_wButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_wButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_wButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_wButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="W"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_yButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_xButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_vButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_tButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_tButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_wButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_uButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_sButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_qButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_uButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="U"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_sButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_qButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Q"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_tButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_rButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_pButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_nButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_pButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_rButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_nButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_qButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_oButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_mButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_kButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_mButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_oButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_aButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_bButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_bButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_bButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_bButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_eButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_cButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_aButton"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_cButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_bButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_bButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_bButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_dButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_eButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_eButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_eButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_eButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_fButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_dButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_bButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_fButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_eButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_eButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_eButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_hButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="H"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_iButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_gButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_eButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_gButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="G"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_iButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_hButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_kButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="K"
+                    app:layout_constraintBottom_toTopOf="@+id/lessonsActivity_nButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_lButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_jButton"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_hButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_jButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="J"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_lButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_kButton"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_vButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="V"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_wButton"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_wButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_wButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_yButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/lessonsActivity_zButton"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lessonsActivity_wButton" />
+
+                <Button
+                    android:id="@+id/lessonsActivity_zButton"
+                    android:layout_width="95dp"
+                    android:layout_height="44dp"
+                    android:text="Z"
+                    app:layout_constraintBottom_toBottomOf="@+id/lessonsActivity_yButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/lessonsActivity_yButton"
+                    app:layout_constraintTop_toTopOf="@+id/lessonsActivity_yButton" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

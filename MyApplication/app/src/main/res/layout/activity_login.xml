@@ -62,7 +62,6 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cancel"
                 android:textColor="@color/black"
-
                 app:layout_constraintBottom_toBottomOf="@+id/loginLoginButton"
                 app:layout_constraintStart_toStartOf="@+id/loginPasswordTextView"
                 app:layout_constraintTop_toTopOf="@+id/loginLoginButton" />
