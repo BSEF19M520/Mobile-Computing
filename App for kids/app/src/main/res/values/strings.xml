@@ -3,4 +3,7 @@
     <string name="repoLink">https://github.com/BSEF19M520/Mobile-Computing</string>
     <string name="empty" />
     <string name="placeholder_text">placeholder_text</string>
+    <string name="choose_one_option_of_each_question">Choose one option of each question</string>
+    <string name="choose_the_name_of_the_object_shown_in_the_pictures">Choose the name of the object shown in the pictures</string>
+    <string name="submit">Submit</string>
 </resources>

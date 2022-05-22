@@ -32,7 +32,7 @@ public class ViewAlphabetImagesActivity extends AppCompatActivity {
         String alphabet = this.getIntent().getStringExtra("alphabet");
         Map<String, Integer> imagesMap = this.getAlphabetImagesIds(alphabet);
         List<Map.Entry<String, Integer>> entries = new ArrayList<>(imagesMap.entrySet());
-        Log.d("aaaaaaaa", entries.toString());
+
         firstTextView.setText(entries.get(0).getKey());
         firstImageView.setImageResource(entries.get(0).getValue());
 
@@ -51,10 +51,11 @@ public class ViewAlphabetImagesActivity extends AppCompatActivity {
         Field[] fields = R.drawable.class.getFields();
         String imagePrefix = "alphabet_image_" + alphabet.toLowerCase();
 
-        int counter = 1; // adding only three images
+        int counter = 1; // to limit the number of retrieved pictures
+        int limit = 3;
 
         for (Field field : fields) {
-            if (counter++ > 3)
+            if (counter++ > limit)
                 break;
             String fieldName = field.getName();
             if (fieldName.startsWith(imagePrefix)) {
