@@ -24,6 +24,7 @@ public class LessonsActivity extends AppCompatActivity implements View.OnClickLi
         this.findViewById(R.id.lessonsActivity_gButton).setOnClickListener(this);
         this.findViewById(R.id.lessonsActivity_hButton).setOnClickListener(this);
         this.findViewById(R.id.lessonsActivity_iButton).setOnClickListener(this);
+        this.findViewById(R.id.lessonsActivity_jButton).setOnClickListener(this);
         this.findViewById(R.id.lessonsActivity_kButton).setOnClickListener(this);
         this.findViewById(R.id.lessonsActivity_lButton).setOnClickListener(this);
         this.findViewById(R.id.lessonsActivity_mButton).setOnClickListener(this);
