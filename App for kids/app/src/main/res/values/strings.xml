@@ -9,4 +9,5 @@
     <string name="lessons">Lessons</string>
     <string name="exam">Exam</string>
     <string name="click_on_an_alphabet">Click on an alphabet</string>
+    <string name="lessons_with_listview">Lessons With ListView</string>
 </resources>

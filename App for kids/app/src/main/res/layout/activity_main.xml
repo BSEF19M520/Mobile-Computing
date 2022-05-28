@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lessons"
-        app:layout_constraintBottom_toTopOf="@+id/mainActivity_examButton"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_lessonActivityWithListViewButton"
         app:layout_constraintEnd_toEndOf="@+id/mainActivity_repoButton"
         app:layout_constraintStart_toStartOf="@+id/mainActivity_repoButton"
         app:layout_constraintTop_toBottomOf="@+id/mainActivity_repoButton" />
@@ -44,6 +44,16 @@
         android:layout_height="wrap_content"
         android:text="Exam"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivity_lessonActivityWithListViewButton"
+        app:layout_constraintStart_toStartOf="@+id/mainActivity_lessonActivityWithListViewButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_lessonActivityWithListViewButton" />
+
+    <Button
+        android:id="@+id/mainActivity_lessonActivityWithListViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lessons With ListView"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_examButton"
         app:layout_constraintEnd_toEndOf="@+id/mainActivity_lessonsButton"
         app:layout_constraintStart_toStartOf="@+id/mainActivity_lessonsButton"
         app:layout_constraintTop_toBottomOf="@+id/mainActivity_lessonsButton" />

@@ -10,22 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppForKids">
         <activity
+            android:name=".LessonWithListViewActivity"
+            android:exported="false"
+            android:label="@string/lessons_with_listview"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
             android:name=".ViewAlphabetImagesActivity"
             android:exported="false"
             android:label="@string/lessons"
-            android:parentActivityName=".LessonsActivity"
-            />
+            android:parentActivityName=".LessonsActivity" />
         <activity
             android:name=".ExamActivity"
             android:exported="false"
             android:label="@string/exam"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".LessonsActivity"
             android:exported="false"
             android:label="@string/lessons"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
