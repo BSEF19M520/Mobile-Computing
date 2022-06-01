@@ -32,7 +32,7 @@ public class LessonWithListViewActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String alphabet = ((TextView) view).getText().toString();
-                Intent intent = new Intent(LessonWithListViewActivity.this, ViewAlphabetImagesActivity.class);
+                Intent intent = new Intent(LessonWithListViewActivity.this, ViewAlphabetImagesListViewActivity.class);
                 intent.putExtra("alphabet", alphabet);
                 LessonWithListViewActivity.this.startActivity(intent);
             }
