@@ -54,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button examWithListViewButton = this.findViewById(R.id.mainActivity_examWithListViewButton);
+        examWithListViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ExamOptionsActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

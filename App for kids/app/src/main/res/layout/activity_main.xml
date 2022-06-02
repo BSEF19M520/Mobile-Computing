@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/mainActivity_lessonActivityWithListViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lessons With ListView"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_examButton"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivity_lessonsButton"
+        app:layout_constraintStart_toStartOf="@+id/mainActivity_lessonsButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_lessonsButton" />
+
     <TextView
         android:id="@+id/mainActivity_mainTextView"
         android:layout_width="wrap_content"
@@ -14,7 +24,6 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/mainActivity_repoButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,6 +44,7 @@
         android:text="Lessons"
         app:layout_constraintBottom_toTopOf="@+id/mainActivity_lessonActivityWithListViewButton"
         app:layout_constraintEnd_toEndOf="@+id/mainActivity_repoButton"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="@+id/mainActivity_repoButton"
         app:layout_constraintTop_toBottomOf="@+id/mainActivity_repoButton" />
 
@@ -43,19 +53,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exam"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mainActivity_examWithListViewButton"
         app:layout_constraintEnd_toEndOf="@+id/mainActivity_lessonActivityWithListViewButton"
         app:layout_constraintStart_toStartOf="@+id/mainActivity_lessonActivityWithListViewButton"
         app:layout_constraintTop_toBottomOf="@+id/mainActivity_lessonActivityWithListViewButton" />
 
     <Button
-        android:id="@+id/mainActivity_lessonActivityWithListViewButton"
+        android:id="@+id/mainActivity_examWithListViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lessons With ListView"
-        app:layout_constraintBottom_toTopOf="@+id/mainActivity_examButton"
-        app:layout_constraintEnd_toEndOf="@+id/mainActivity_lessonsButton"
-        app:layout_constraintStart_toStartOf="@+id/mainActivity_lessonsButton"
-        app:layout_constraintTop_toBottomOf="@+id/mainActivity_lessonsButton" />
+        android:text="Exam with ListView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivity_examButton"
+        app:layout_constraintStart_toStartOf="@+id/mainActivity_examButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainActivity_examButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

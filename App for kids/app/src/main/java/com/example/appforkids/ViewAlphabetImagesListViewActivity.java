@@ -36,11 +36,7 @@ public class ViewAlphabetImagesListViewActivity extends AppCompatActivity {
         Field[] fields = R.drawable.class.getFields();
         String imagePrefix = "alphabet_image_" + alphabet.toLowerCase();
 
-        int limit = 3; // to limit the number of retrieved pictures
-
         for (Field field : fields) {
-            if (lessonItems.size() > limit)
-                break;
             String fieldName = field.getName();
             if (fieldName.startsWith(imagePrefix)) {
                 // removing prefix
