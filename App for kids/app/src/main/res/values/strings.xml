@@ -10,4 +10,5 @@
     <string name="exam">Exam</string>
     <string name="click_on_an_alphabet">Click on an alphabet</string>
     <string name="lessons_with_listview">Lessons With ListView</string>
+    <string name="exam_with_listview">Exam With ListView</string>
 </resources>

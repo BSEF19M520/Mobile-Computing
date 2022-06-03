@@ -11,13 +11,21 @@
         android:theme="@style/Theme.AppForKids">
         <activity
             android:name=".ExamWithListViewActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/exam_with_listview"
+            android:parentActivityName=".ExamOptionsActivity"
+            />
         <activity
             android:name=".ExamOptionsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/exam_with_listview"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ViewAlphabetImagesListViewActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/lessons_with_listview"
+            android:parentActivityName=".LessonWithListViewActivity"
+            />
         <activity
             android:name=".LessonWithListViewActivity"
             android:exported="false"

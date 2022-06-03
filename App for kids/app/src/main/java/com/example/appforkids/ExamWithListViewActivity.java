@@ -67,15 +67,9 @@ public class ExamWithListViewActivity extends AppCompatActivity {
             int score = 0;
             for (int i = 0; i < examItems.size(); i++) {
                 ExamItem examItem = (ExamItem) listView.getItemAtPosition(i);
-                View examItemView = listView.getChildAt(i);
                 if (examItem.getSelectedAnswer().equalsIgnoreCase(examItem.getCorrectAnswer())) {
                     score++;
-                } else {
-                    examItemView.findViewById(examItem.getSelectedAnswerRadioButtonId())
-                            .setBackgroundColor(this.getResources().getColor(R.color.red));
                 }
-                examItemView.findViewById(examItem.getCorrectAnswerRadioButtonId())
-                        .setBackgroundColor(this.getResources().getColor(R.color.green));
             }
             String scoreText = "Score: " + score + "/" + examItems.size();
             ((TextView) this.findViewById(R.id.examActivityWithListView_scoreTextView)).setText(scoreText);
@@ -85,8 +79,6 @@ public class ExamWithListViewActivity extends AppCompatActivity {
 
     private List<ExamItem> getAlphabetImagesIds() {
         // using reflection to dynamically load the images from drawable
-        // key is the name of the image
-        // value is the id
         List<ExamItem> list = new ArrayList<>();
         Field[] fields = R.drawable.class.getFields();
         String imagePrefix = "alphabet_image_";
